@@ -34,8 +34,13 @@ public class Task {
 		this.description = description;
 		this.checked = checked;
 	}
-	
-	
+
+	public Task(int id, String title, String description, boolean checked) {
+		this.id = id;
+		this.title = title;
+		this.description = description;
+		this.checked = checked;
+	}
 
 	public int getId() {
 		return id;

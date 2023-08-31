@@ -32,9 +32,7 @@ public class HomeRestController {
 	
 	@GetMapping("/tasks/{id}")
 	public Task showTaskById(@PathVariable int id ) {
-		if(id<=0 || id>=taskService.findAll().size()) {
-			throw new InvalidTaskException();
-		}
+
 		return  taskService.findById(id);
 	}
 	

@@ -92,7 +92,7 @@ public class LoginController {
 				theModel.addAttribute("invalidPassword", true);
 				return "forgotPassword";
 			}
-			
+			user.setPassword(newPassword);
 			userService.save(user);
 		
 		return "redirect:/showLoginPage";
